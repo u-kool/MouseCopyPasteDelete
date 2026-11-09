@@ -1,0 +1,43 @@
+[package]
+name = "mousecopypastedelete"
+version = "0.2.0"
+edition = "2021"
+description = "Auto copy, paste, and delete selected text by mouse gestures"
+license = "MIT"
+
+[dependencies]
+anyhow = "1"
+directories = "6"
+eframe = { version = "0.37", default-features = false, features = ["glow", "default_fonts"] }
+log = "0.4"
+resvg = "0.45"
+rfd = "0.15"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+simplelog = "0.12"
+single-instance = "0.3"
+tray-icon = "0.26"
+windows = { version = "0.62", features = [
+    "Win32_Foundation",
+    "Win32_UI_Accessibility",
+    "Win32_UI_Input_KeyboardAndMouse",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_System_Com",
+    "Win32_System_Threading",
+    "Win32_System_Registry",
+    "Win32_System_Diagnostics_Debug",
+    "Win32_Media_Audio",
+    "Win32_System_DataExchange",
+    "Win32_System_Memory",
+] }
+
+[build-dependencies]
+ico = "0.4"
+resvg = "0.45"
+winresource = "0.1"
+
+[profile.release]
+opt-level = "z"
+lto = true
+strip = true
+panic = "abort"

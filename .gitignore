@@ -1,0 +1,6 @@
+/target
+app.log
+*.pdb
+/MouseCopyPasteDelete.zip
+/mousecopypastedelete.exe
+/autocopypastedelete.exe
