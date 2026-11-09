@@ -19,6 +19,9 @@
 - Автозапуск с Windows через `HKCU\Software\Microsoft\Windows\CurrentVersion\Run`.
 - Логирование в `app.log` (рядом с exe, иначе в `%LOCALAPPDATA%`, иначе во временной папке).
 
+<img width="530" height="460" alt="image" src="https://github.com/user-attachments/assets/4898a1ae-395a-4719-947a-3d6bf4683e33" />
+
+
 ## Сборка
 
 ```bash
